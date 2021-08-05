@@ -8,9 +8,28 @@ namespace Threads_TutPart2_ConsoleApp
         static void Main(string[] args)
         {
             // Start_UseManyThreads();
-            Start_UseThreadPool();
+            // Start_UseThreadPool();
+            GetThreadData();
             
             Console.ReadLine();
+        }
+        
+        private static void GetThreadData()
+        {
+            // Получаем текущий поток
+            Thread thread = Thread.CurrentThread;
+            
+            // Получить имя потока
+            Console.WriteLine($"Имя потока: {thread.Name}");
+            thread.Name = "Main";
+            Console.WriteLine($"Имя потока: {thread.Name}");
+            
+            Console.WriteLine($"Запущен ли поток: {thread.IsAlive}");
+            Console.WriteLine($"Приоритет потока: {thread.Priority}");
+            Console.WriteLine($"Статус потока: {thread.ThreadState}");
+            
+            // Получаем домен приложения
+            Console.WriteLine($"Домен приложения: {Thread.GetDomain().FriendlyName}");
         }
         
         /// <summary>
