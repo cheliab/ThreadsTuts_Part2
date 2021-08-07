@@ -9,11 +9,46 @@ namespace Threads_TutPart2_ConsoleApp
         {
             // Start_UseManyThreads();
             // Start_UseThreadPool();
-            GetThreadData();
+            // GetThreadData();
+            CreateThread();
             
             Console.ReadLine();
         }
+
+        /// <summary>
+        /// Создание простого потока без параметров
+        /// </summary>
+        private static void CreateThread()
+        {
+            // Пример создания нового потока 
+            // Thread newThread = new Thread(new ThreadStart(Count)); // конструктор с делегатом
+            Thread newThread = new Thread(Count); // коструктор с неявным использования делегата
+            
+            newThread.Start(); // запускаем поток
+
+            for (int i = 1; i < 9; i++)
+            {
+                Console.WriteLine("Главный поток:");
+                Console.WriteLine(i * i);
+                
+                Thread.Sleep(300);
+            }
+        }
+
+        private static void Count()
+        {
+            for (int i = 1; i < 9; i++)
+            {
+                Console.WriteLine("Второй поток:");
+                Console.WriteLine(i * i);
+                
+                Thread.Sleep(400);
+            }    
+        }
         
+        /// <summary>
+        /// Получение данных о потоке
+        /// </summary>
         private static void GetThreadData()
         {
             // Получаем текущий поток
