@@ -10,10 +10,47 @@ namespace Threads_TutPart2_ConsoleApp
             // Start_UseManyThreads();
             // Start_UseThreadPool();
             // GetThreadData();
-            CreateThread();
+            // CreateThread();
+            // CreateParameterizedThread();
             
             Console.ReadLine();
         }
+        
+        #region ParameterizedThread
+        
+        private static void CreateParameterizedThread()
+        {
+            var number = 4;
+            
+            // Создаем поток
+            Thread myThread = new Thread(new ParameterizedThreadStart(CountParam));
+            myThread.Start(number);
+
+            for (var i = 1; i < 9; i++)
+            {
+                Console.WriteLine("Главный поток:");
+                Console.WriteLine(i * number);
+                
+                Thread.Sleep(300);
+            }
+        }
+
+        private static void CountParam(object x)
+        {
+            int number = (int)x;
+            
+            for (var i = 1; i < 9; i++)
+            {
+                Console.WriteLine("Второй поток:");
+                Console.WriteLine(i + number);
+                
+                Thread.Sleep(400);
+            }
+        }
+        
+        #endregion
+        
+        #region ThreadStartDelegate
 
         /// <summary>
         /// Создание простого потока без параметров
@@ -45,6 +82,8 @@ namespace Threads_TutPart2_ConsoleApp
                 Thread.Sleep(400);
             }    
         }
+        
+        #endregion
         
         /// <summary>
         /// Получение данных о потоке
