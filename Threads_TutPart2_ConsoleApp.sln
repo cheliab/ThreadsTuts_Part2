@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads_TutPart2_ConsoleApp", "Threads_TutPart2_ConsoleApp\Threads_TutPart2_ConsoleApp.csproj", "{FFB18F7B-EA86-4850-BBC3-28AC1CB244B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterizedThread_ClassParam", "ParameterizedThread_ClassParam\ParameterizedThread_ClassParam.csproj", "{213C87C0-9246-4D44-8DF0-50B55E32A4F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{FFB18F7B-EA86-4850-BBC3-28AC1CB244B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFB18F7B-EA86-4850-BBC3-28AC1CB244B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFB18F7B-EA86-4850-BBC3-28AC1CB244B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{213C87C0-9246-4D44-8DF0-50B55E32A4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{213C87C0-9246-4D44-8DF0-50B55E32A4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{213C87C0-9246-4D44-8DF0-50B55E32A4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{213C87C0-9246-4D44-8DF0-50B55E32A4F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
