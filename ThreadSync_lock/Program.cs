@@ -12,7 +12,9 @@ namespace ThreadSync_lock
         static void Main(string[] args)
         {
             // StartThreads_WithoutLock();
-            StartThreads_WithLock();
+            // StartThreads_WithLock();
+            
+            Monitor_WriteFile.Start();
 
             Console.ReadLine();
         }
