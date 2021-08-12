@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterizedThread_ClassPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSync_lock", "ThreadSync_lock\ThreadSync_lock.csproj", "{C650119B-7852-4418-96E6-5FDC88197972}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSynq_Monitor_BlockingQueue", "ThreadSynq_Monitor_BlockingQueue\ThreadSynq_Monitor_BlockingQueue.csproj", "{C587A979-5A36-4DEC-89D0-766E35350F20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{C650119B-7852-4418-96E6-5FDC88197972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C650119B-7852-4418-96E6-5FDC88197972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C650119B-7852-4418-96E6-5FDC88197972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C587A979-5A36-4DEC-89D0-766E35350F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C587A979-5A36-4DEC-89D0-766E35350F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C587A979-5A36-4DEC-89D0-766E35350F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C587A979-5A36-4DEC-89D0-766E35350F20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
