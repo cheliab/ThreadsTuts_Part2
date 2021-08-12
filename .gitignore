@@ -7,3 +7,5 @@ ThreadSync_lock/bin
 ThreadSync_lock/obj
 ThreadSynq_Monitor_BlockingQueue/bin
 ThreadSynq_Monitor_BlockingQueue/obj
+*/bin
+*/obj
