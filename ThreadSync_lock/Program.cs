@@ -15,7 +15,8 @@ namespace ThreadSync_lock
             // StartThreads_WithLock();
             
             // Monitor_WriteFile.Start();
-            Monitor_TickTock.Start();
+            // Monitor_TickTock.Start();
+            Monitor_WaitPulse_SimpleExample.Start();
             
             Console.ReadLine();
         }
