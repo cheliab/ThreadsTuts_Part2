@@ -12,7 +12,8 @@ namespace Threading_Albahari_Part1
             // Thread_04_ShareStaticField.Start();
             // Thread_05_BrokeShareData.Start();
             // Thread_06_LockShareStaticData.Start();
-            Thread_07_JoinSleep.Start();
+            // Thread_07_JoinSleep.Start();
+            Thread_08_Delegate_ThreadStart.Start();
             
             Console.ReadLine();
         }
