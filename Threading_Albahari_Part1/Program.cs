@@ -16,7 +16,8 @@ namespace Threading_Albahari_Part1
             // Thread_08_Delegate_ThreadStart.Start();
             // Thread_10_LambdaExp_CapturedVar.Start_forLoopExample();
             // Thread_10_LambdaExp_CapturedVar.Start_StringExample();
-            Thread_10_LambdaExp_CapturedVar.Start_TempVarSolution();
+            // Thread_10_LambdaExp_CapturedVar.Start_TempVarSolution();
+            Thread_11_NamingThreads.Start();
             
             Console.ReadLine();
         }
