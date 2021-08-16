@@ -1,4 +1,5 @@
 ﻿using System;
+using Threading_Albahari_Part1.ThreadPool;
 
 namespace Threading_Albahari_Part1
 {
@@ -19,7 +20,9 @@ namespace Threading_Albahari_Part1
             // Thread_10_LambdaExp_CapturedVar.Start_TempVarSolution();
             // Thread_11_NamingThreads.Start();
             // Thread_12_ForegroundBackgroundThreads.Start();
-            Thread_14_ExceptionHandling.Start();
+            // Thread_14_ExceptionHandling.Start();
+            
+            ThreadPool_01_EnteringTheThreadPool.Start();
             
             Console.ReadLine();
         }
