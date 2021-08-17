@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Threading_Albahari_Part1.ThreadPool
+namespace Threading_Albahari_Part1.ThreadPoolExamples
 {
     public class ThreadPool_01_EnteringTheThreadPool
     {

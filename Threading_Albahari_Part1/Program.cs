@@ -1,5 +1,5 @@
 ﻿using System;
-using Threading_Albahari_Part1.ThreadPool;
+using Threading_Albahari_Part1.ThreadPoolExamples;
 
 namespace Threading_Albahari_Part1
 {
@@ -23,7 +23,8 @@ namespace Threading_Albahari_Part1
             // Thread_14_ExceptionHandling.Start();
             
             // ThreadPool_01_EnteringTheThreadPool.Start();
-            ThreadPool_02_GenericTask.Start();
+            // ThreadPool_02_GenericTask.Start();
+            ThreadPool_03_WithoutTPL_QueueUserWorkItem.Start();
             
             Console.ReadLine();
         }
