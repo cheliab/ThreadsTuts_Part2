@@ -24,7 +24,9 @@ namespace Threading_Albahari_Part1
             
             // ThreadPool_01_EnteringTheThreadPool.Start();
             // ThreadPool_02_GenericTask.Start();
-            ThreadPool_03_WithoutTPL_QueueUserWorkItem.Start();
+            // ThreadPool_03_WithoutTPL_QueueUserWorkItem.Start();
+            // ThreadPool_04_BeginInvoke_EndInvoke.Start();
+            // ThreadPool_05_BeginInvokeCallback.Start();
             
             Console.ReadLine();
         }
