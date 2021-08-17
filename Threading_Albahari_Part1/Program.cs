@@ -22,7 +22,8 @@ namespace Threading_Albahari_Part1
             // Thread_12_ForegroundBackgroundThreads.Start();
             // Thread_14_ExceptionHandling.Start();
             
-            ThreadPool_01_EnteringTheThreadPool.Start();
+            // ThreadPool_01_EnteringTheThreadPool.Start();
+            ThreadPool_02_GenericTask.Start();
             
             Console.ReadLine();
         }
