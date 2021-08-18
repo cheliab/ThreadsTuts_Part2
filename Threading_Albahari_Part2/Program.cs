@@ -7,7 +7,8 @@ namespace Threading_Albahari_Part2
         static void Main(string[] args)
         {
             // Locking_01.Start_ThreadUnsafe();
-            Locking_01.Start_ThreadSafe();
+            // Locking_01.Start_ThreadSafe();
+            Locking_02_Monitor_EnterExit.Start();
             
             Console.ReadLine();
         }

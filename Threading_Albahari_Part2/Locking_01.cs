@@ -36,7 +36,7 @@ namespace Threading_Albahari_Part2
             Thread.Sleep(1000); // задержка между операциями, чтобы проще словить деление на ноль
             if (_val2 != 0)
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(1000); // В этом месте второй поток может изменить значение _val2 на 0
                 Console.WriteLine(_val1 / _val2);
             }
 
