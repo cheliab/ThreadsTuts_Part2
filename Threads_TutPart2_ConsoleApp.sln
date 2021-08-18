@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSynq_Monitor_Blocking
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threading_Albahari_Part1", "Threading_Albahari_Part1\Threading_Albahari_Part1.csproj", "{A5D4AB37-52C2-4960-B489-84C9B0C6573E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threading_Albahari_Part2", "Threading_Albahari_Part2\Threading_Albahari_Part2.csproj", "{8E447894-934C-4EAD-A11B-E593DE4F1546}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{A5D4AB37-52C2-4960-B489-84C9B0C6573E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5D4AB37-52C2-4960-B489-84C9B0C6573E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5D4AB37-52C2-4960-B489-84C9B0C6573E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E447894-934C-4EAD-A11B-E593DE4F1546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E447894-934C-4EAD-A11B-E593DE4F1546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E447894-934C-4EAD-A11B-E593DE4F1546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E447894-934C-4EAD-A11B-E593DE4F1546}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
