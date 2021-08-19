@@ -1,12 +1,13 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 
 namespace Threading_Albahari_Part2
 {
+    /// <summary>
+    /// Пример возможных проблем при использовании Monitor.Enter
+    /// </summary>
     public class Locking_03_MonitorEnter_lockTackenBool
     {
         private static object _locker = new object();
-        private static int _a = 1, _b = 1;
         
         // Пример с проблемой - Возможна потеря объекта блокировки
         // http://www.albahari.com/threading/part2.aspx#_lockTaken_overloads
