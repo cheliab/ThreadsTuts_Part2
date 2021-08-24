@@ -25,6 +25,9 @@ namespace DeadlocksInDepth_Part1
             var thread2 = new Thread(GetSingletonInThread);
 
             thread1.Start();
+            
+            Thread.Sleep(500); // Задержка чтобы попасть между проверкой и созданием экзепляра
+            
             thread2.Start();
         }
 
@@ -40,11 +43,15 @@ namespace DeadlocksInDepth_Part1
         /// <returns></returns>
         public static Singleton GetInctance()
         {
-            lock (_locker)
+            lock (_locker) // Если убрать блокировку то может получиться что два потока создадут разные экзепляры
             {
+                Thread.Sleep(1000);
                 if (_instance == null)
+                {
+                    Thread.Sleep(1000);
                     _instance = new Singleton();
-
+                }
+                    
                 return _instance;
             }
         }
