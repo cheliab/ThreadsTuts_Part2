@@ -22,6 +22,23 @@ namespace DeadlockResolve_AccountExample
         /// </summary>
         public void Transfer()
         {
+            object lock1, lock2;
+
+            // Тут мы смотрим на идентификаторы аккаунтов
+            // и блокируем их по порядку их идентификаторов
+            // это заставит второй поток дождаться освобождения аккаунта с меньшим идентификатором
+            // перед тем как выполнить свою операцию
+            if (_fromAccount.ID < _toAccount.ID)
+            {
+                lock1 = _fromAccount;
+                lock2 = _toAccount;
+            }
+            else
+            {
+                lock1 = _toAccount;
+                lock2 = _fromAccount;
+            }
+            
             lock (_fromAccount)
             {
                 Thread.Sleep(1000);
