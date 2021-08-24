@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadlockResolve_AccountExam
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deadlocks", "Deadlocks", "{1B403ABC-B186-461D-A1BC-9F50110E1A08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadlocksInDepth_Part1", "DeadlocksInDepth_Part1\DeadlocksInDepth_Part1.csproj", "{FA9A2FCE-951F-412C-A900-FFD421D19213}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,9 +58,14 @@ Global
 		{D3B2C32C-4818-4B72-887B-7D7A97C6D827}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3B2C32C-4818-4B72-887B-7D7A97C6D827}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3B2C32C-4818-4B72-887B-7D7A97C6D827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA9A2FCE-951F-412C-A900-FFD421D19213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA9A2FCE-951F-412C-A900-FFD421D19213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA9A2FCE-951F-412C-A900-FFD421D19213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA9A2FCE-951F-412C-A900-FFD421D19213}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AC4E11D1-7717-4352-AF1D-A8786A0B0035} = {1B403ABC-B186-461D-A1BC-9F50110E1A08}
 		{D3B2C32C-4818-4B72-887B-7D7A97C6D827} = {1B403ABC-B186-461D-A1BC-9F50110E1A08}
+		{FA9A2FCE-951F-412C-A900-FFD421D19213} = {1B403ABC-B186-461D-A1BC-9F50110E1A08}
 	EndGlobalSection
 EndGlobal
