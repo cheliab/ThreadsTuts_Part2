@@ -6,7 +6,8 @@ namespace DeadlocksInDepth_Part1
     {
         static void Main(string[] args)
         {
-            Example_01_Singleton.Start();
+            // Example_01_Singleton.Start();
+            Example_02_Deadlock_NestedLocks.Start();
             
             Console.ReadLine();
         }

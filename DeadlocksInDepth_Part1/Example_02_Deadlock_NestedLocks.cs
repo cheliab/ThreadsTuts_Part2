@@ -6,7 +6,7 @@ namespace DeadlocksInDepth_Part1
 {
     public class Example_02_Deadlock_NestedLocks
     {
-        public void Start()
+        public static void Start()
         {
             Console.WriteLine("Starting...");
             
