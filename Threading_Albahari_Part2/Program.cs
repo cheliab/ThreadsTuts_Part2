@@ -13,7 +13,7 @@ namespace Threading_Albahari_Part2
             // Locking_09_Mutex.Start();
             // Locking_10_Semaphore.Start();
 
-            Locking_11_ThreadSafetyAndNETFrameworkTypes.Start();
+            ThreadSafety_01_NETFrameworkTypes.Start();
             
             Console.ReadLine();
         }

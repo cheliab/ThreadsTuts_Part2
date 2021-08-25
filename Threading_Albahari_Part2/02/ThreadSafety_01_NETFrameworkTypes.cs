@@ -14,7 +14,7 @@ namespace Threading_Albahari_Part2
     ///
     /// Вот пример, где два потока одновременно добавляют элемент в одну и ту же List коллекцию, а затем перечисляют список:
     /// </summary>
-    public class Locking_11_ThreadSafetyAndNETFrameworkTypes
+    public class ThreadSafety_01_NETFrameworkTypes
     {
         private static List<string> _list = new List<string>();
 
