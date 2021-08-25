@@ -11,7 +11,9 @@ namespace Threading_Albahari_Part2
             // Locking_02_Monitor_EnterExit.Start();
             
             // Locking_09_Mutex.Start();
-            Locking_10_Semaphore.Start();
+            // Locking_10_Semaphore.Start();
+
+            Locking_11_ThreadSafetyAndNETFrameworkTypes.Start();
             
             Console.ReadLine();
         }
