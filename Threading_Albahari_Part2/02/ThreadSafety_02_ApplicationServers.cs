@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading;
 
 namespace Threading_Albahari_Part2
 {
@@ -15,9 +16,20 @@ namespace Threading_Albahari_Part2
     /// либо имеет модель активации, которая создает отдельный экземпляр объекта для каждого клиента или каждого запроса.
     /// Взаимодействие обычно возникает только через статические поля, иногда используемые для кэширования в частях памяти базы данных для повышения производительности.
     /// </summary>
-    public class ThreadSafety_02_AplicationServers
+    public class ThreadSafety_02_ApplicationServers
     {
-        
+        public static void Start()
+        {
+            new Thread(() =>
+            {
+                var user1 = UserCache.GetUser(1);
+            }).Start();
+            
+            new Thread(() =>
+            {
+                var user2 = UserCache.GetUser(1);
+            }).Start();
+        }
     }
 
     class User
@@ -27,14 +39,16 @@ namespace Threading_Albahari_Part2
 
     class Database
     {
+        private static readonly User[] Users = { new() { Id = 1 }, new() { Id = 2 } };
+        
         /// <summary>
         /// Получить юзера из БД
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">Идентификатор пользователя</param>
+        /// <returns>Пользователь</returns>
         public static User RetriveUser(int id)
         {
-            return new User();
+            return (User)Users.GetValue(id);
         }
     }
 
