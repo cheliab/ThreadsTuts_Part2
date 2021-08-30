@@ -1,4 +1,5 @@
 ﻿using System;
+using Threading_Albahari_Part2._03_EventWaitHandles;
 
 namespace Threading_Albahari_Part2
 {
@@ -14,7 +15,12 @@ namespace Threading_Albahari_Part2
             // Locking_10_Semaphore.Start();
 
             // ThreadSafety_01_NETFrameworkTypes.Start();
-            ThreadSafety_02_ApplicationServers.Start();
+            // ThreadSafety_02_ApplicationServers.Start();
+            // ThreadSafety_03_ImmutableObjects.Start();
+            
+            // EventWaitHandles_01_AutoResetEvent.Start();
+            // EventWaitHandles_01_AutoResetEvent.MultipleSetCall();
+            EventWaitHandles_01_AutoResetEvent.CallReset();
             
             Console.ReadLine();
         }

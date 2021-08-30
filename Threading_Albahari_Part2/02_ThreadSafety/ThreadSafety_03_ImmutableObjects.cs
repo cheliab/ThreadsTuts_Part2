@@ -1,4 +1,6 @@
-﻿namespace Threading_Albahari_Part2
+﻿using System;
+
+namespace Threading_Albahari_Part2
 {
     // Immutable Objects (Неизменяемые объекты)
     
@@ -47,7 +49,7 @@
         public static void Start()
         {
             // Теперь мы можем читать / записывать значения этого типа, не удерживая блокировку более чем для одного присваивания:
-            var status = new ProgressStatus(50, "");
+            var status = new ProgressStatus(50, "Все оки!");
 
             lock (_statusLocker)
                 _status = status; // быстрая блокировака (обновляем выполненный прогресс)
@@ -64,6 +66,9 @@
             // получаем данные свойств
             int pc = statusCopy.PercentComplete;
             string msg = statusCopy.StatusMessage;
+            
+            Console.WriteLine($"Persent complete {pc}"); // Persent complete 50
+            Console.WriteLine($"Message {msg}"); // Message Все оки!
         }
     }
 }
