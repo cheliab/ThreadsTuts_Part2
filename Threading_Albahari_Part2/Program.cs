@@ -20,7 +20,8 @@ namespace Threading_Albahari_Part2
             
             // EventWaitHandles_01_AutoResetEvent.Start();
             // EventWaitHandles_01_AutoResetEvent.MultipleSetCall();
-            EventWaitHandles_01_AutoResetEvent.CallReset();
+            // EventWaitHandles_01_AutoResetEvent.CallReset();
+            EventWaitHandles_01_AutoResetEvent_01_WaitInput.Start();
             
             Console.ReadLine();
         }
