@@ -10,6 +10,9 @@ namespace Threading_Albahari_Part1
     /// </summary>
     public class Thread_08_Delegate_ThreadStart
     {
+        /// <summary>
+        /// Для запуска метода без параметров используется делегат ThreadStart 
+        /// </summary>
         // public delegate void ThreadStart();
         
         public static void Start()

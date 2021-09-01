@@ -30,7 +30,7 @@ namespace Threading_Albahari_Part1
             // Realtime означает что поток не отдаст никому время для работы, пока полностью не выполнится
             // Обычно разработчики работают максимум с High
 
-            // Таблица расчета приоритета для потока
+            // Таблица расчета приоритета для потока (VIA CLR)
             
             //               Idle BelowNormal Normal AboveNormal High Realtime
             // Time-Critical 15   15          15     15          15   31

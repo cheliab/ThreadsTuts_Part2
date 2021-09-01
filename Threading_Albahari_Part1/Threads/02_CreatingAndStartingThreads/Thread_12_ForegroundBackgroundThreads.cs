@@ -3,11 +3,20 @@ using System.Threading;
 
 namespace Threading_Albahari_Part1
 {
+    /// <summary>
+    /// Потоки переднего плана и фоновые потоки
+    /// 
+    /// По умолчанию потоки, которые вы создаете явно, являются потоками переднего плана.
+    /// Потоки переднего плана поддерживают работу приложения до тех пор,
+    /// пока работает любой из них, а фоновые потоки - нет.
+    /// Когда все потоки переднего плана завершаются, приложение завершается,
+    /// а все еще работающие фоновые потоки внезапно завершаются.
+    /// </summary>
     public class Thread_12_ForegroundBackgroundThreads
     {
         public static void Start()
         {
-            Thread worker = new Thread(() => Thread.Sleep(5000));
+            Thread worker = new Thread(() => Thread.Sleep(5000)); // ждем 5 секунд для демонстрации
             
             // По умолчанию создаваемые потоки являются потоками переднего плана
             Console.WriteLine($"IsBackground = {worker.IsBackground}");
@@ -23,5 +32,7 @@ namespace Threading_Albahari_Part1
             
             Thread.Sleep(1000);
         }
+        
+        // Статус переднего плана / фона потока не имеет никакого отношения к его приоритету или распределению времени выполнения.
     }
 }

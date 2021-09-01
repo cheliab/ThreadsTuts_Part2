@@ -5,6 +5,8 @@ namespace Threading_Albahari_Part1
 {
     /// <summary>
     /// Обработка исключений в потоках
+    ///
+    /// Любые блоки try/catch/finally в области видимости при создании потока не имеют отношения к потоку, когда он начинает выполнение.
     /// </summary>
     public class Thread_14_ExceptionHandling
     {
@@ -23,7 +25,7 @@ namespace Threading_Albahari_Part1
         {
             try
             {
-                new Thread(Go).Start();
+                new Thread(Go).Start(); // Вызывается метод с NRE
             }
             catch (Exception ex)
             {

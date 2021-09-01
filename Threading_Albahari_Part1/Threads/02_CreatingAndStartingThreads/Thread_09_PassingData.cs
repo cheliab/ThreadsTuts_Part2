@@ -4,14 +4,14 @@ using System.Threading;
 namespace Threading_Albahari_Part1
 {
     /// <summary>
-    /// Передача данных в поток
+    /// Варианты для передачи данных в поток
     /// </summary>
     public class Thread_09_PassingData
     {
         public static void Start()
         {
             // Запуск метода из лямбда выражения
-            Thread thread = new Thread(() => Print("Hello from thread!"));
+            Thread thread = new Thread(() => Print("Hello from thread!")); // Вариант удобен тем что можно использовать любое количество параметров
             thread.Start();
             
             // Выполнение нескольких инстуркций в лямбда выражении
@@ -28,9 +28,10 @@ namespace Threading_Albahari_Part1
             }).Start();
             
             // Передача параметров в виде объекта
-            // Используется делегат:
+            // Используется делегат ParameterizedThreadStart:
             // public delegate void ParameterizedThreadStart(object obj);
-            new Thread(PrintObject).Start("Object message");
+            
+            new Thread(PrintObject).Start("Object message"); // объект передается через метод Start(object parameter)
         }
         
         private static void Print(string message)
