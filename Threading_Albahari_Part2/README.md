@@ -1,4 +1,37 @@
-﻿# Основы синхронизации (Synchronization Essentials)
+﻿BASIC SYNCHRONIZATION
+
+Synchronization Essentials
+
+    Blocking
+    Blocking Versus Spinning
+    ThreadState
+
+Locking
+
+    Monitor.Enter and Monitor.Exit
+    The Synchronization Object
+    When to Lock
+    ­Locking and Atomicity
+    Nested Locking
+    Deadlocks
+    Performance
+    Mutex
+    Semaphore
+
+Thread Safety
+
+    .NET Framework Types
+    Application Servers
+    Rich Client Applications
+    Immutable Objects
+
+Event Wait Handles
+
+    AutoResetEvent
+
+---
+
+# Основы синхронизации (Synchronization Essentials)
 
 До сих пор мы описали, как запустить задачу в потоке, 
 настроить поток и передавать данные в обоих направлениях. <br />
